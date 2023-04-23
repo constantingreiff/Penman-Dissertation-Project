@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "745740608523",
+    "project_id": "penman-7fc14",
+    "storage_bucket": "penman-7fc14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745740608523:android:5c29d00aa3a4b5e569d30e",
+        "android_client_info": {
+          "package_name": "com.example.penman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745740608523-55kt3gpd3i9ekvp0niqqgm4ls05akenf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrkIelBJF0DZCTzOI4eCRmobJPoJ8S5J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745740608523-55kt3gpd3i9ekvp0niqqgm4ls05akenf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TheCampusWizard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#F0F1F5</item>
+        <item name="colorPrimaryVariant">#F0F1F5</item>
+        <item name="colorOnPrimary">#F2F2F2</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#9484ff</item>
+        <item name="colorSecondaryVariant">#9484ff</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSecondaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.TheCampusWizard.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TheCampusWizard.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TheCampusWizard.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

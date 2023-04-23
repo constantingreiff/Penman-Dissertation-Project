@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.penman">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TheCampusWizard">
+        <activity
+            android:name=".activities.AddBook"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Profile"
+            android:exported="false" />
+        <activity android:name=".activities.PasswordReset" />
+        <activity android:name=".activities.RegisterSuccessful" />
+        <activity android:name=".activities.Login" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LBookReview"></activity>
+        <activity android:name=".activities.Register" />
+        <activity android:name=".activities.ShowcaseBooks" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

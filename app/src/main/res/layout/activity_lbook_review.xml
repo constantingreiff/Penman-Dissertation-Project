@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_white"
+        tools:context=".activities.LBookReview">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <ImageView
+            android:id="@+id/lBookBackBtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="339dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_icon"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/lBookPageImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/lBookBackBtn"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/lBookTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/anton"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintStart_toEndOf="@+id/lBookPageImg"
+            app:layout_constraintTop_toBottomOf="@+id/lBookBackBtn" />
+
+        <TextView
+            android:id="@+id/lBookAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toEndOf="@+id/lBookPageImg"
+            app:layout_constraintTop_toBottomOf="@+id/lBookTitle" />
+
+        <TextView
+            android:id="@+id/lBookEdition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintHorizontal_bias="0.561"
+            app:layout_constraintStart_toEndOf="@+id/lBookPageImg"
+            app:layout_constraintTop_toBottomOf="@+id/lBookAuthor" />
+
+        <Button
+            android:id="@+id/lReadBookBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:letterSpacing="0.05"
+            android:paddingVertical="10dp"
+            android:text="Read book"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="12sp"
+            app:backgroundTint="#46369F"
+            app:cornerRadius="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/archivo_black"
+            android:text="Reviews"
+            android:textColor="@color/style_purple"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/lBookPageImg" />
+
+        <EditText
+            android:id="@+id/lReviewField"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/input_field"
+            android:hint="Add review here..."
+            android:inputType="textPersonName"
+            android:paddingVertical="12dp"
+            android:text=""
+            android:textColorHint="@color/text_gray"
+            android:textColor="@color/text_black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/lRevRecyclerView" />
+
+        <Button
+            android:id="@+id/lReviewBtn"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:letterSpacing="0.05"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="18sp"
+            app:backgroundTint="#46369F"
+            app:cornerRadius="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/lReviewField" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lRevRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline18"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

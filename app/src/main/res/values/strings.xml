@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="action_register">Register</string>
+    <string name="action_sign_in">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="first_name">First name</string>
+    <string name="surname">Surname</string>
+    <string name="app_name">Penman</string>
+    <string name="title_activity_login">Surname</string>
+    <string name="action_sign_in_short">S</string>
+    <string name="action_settings">Surname</string>
+    <string name="first_fragment_label">First fragment</string>
+    <string name="second_fragment_label">First fragment</string>
+    <string name="login_failed">Login failed</string>
+    <string name="invalid_username">Invalid username</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="welcome">Welcome</string>
+    <string name="title_activity_register">Register</string>
+    <string name="registration">Registration</string>
+
+
+</resources>
+
